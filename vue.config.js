@@ -3,8 +3,9 @@ module.exports = {
 		loaderOptions: {
 			scss: {
 				prependData: `
-                    @import "~@/assets/scss/reset.scss";
-                    @import "~@/assets/scss/fonts.scss";
+
+                    @import "~@/assets/scss/vars.scss";
+
                 `,
 			},
 		},

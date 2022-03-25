@@ -1,0 +1,82 @@
+@import '~@/assets/scss/reset.scss';
+
+@import '~@/assets/scss/fonts.scss';
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body,
+.body-font {
+	font-family: $body-font;
+	color: $font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-font {
+	font-family: $header-font;
+	font-weight: 400;
+}
+.h1,
+h1 {
+	font-size: 40px;
+	line-height: 60px;
+}
+.h2,
+h2 {
+	font-size: 30px;
+}
+.h3,
+h3 {
+	font-size: 26px;
+}
+.h6,
+h6 {
+	font-size: 20px;
+	line-height: 26px;
+}
+.upper-case {
+	text-transform: uppercase;
+}
+.dotted-orange {
+	padding-left: 10px;
+	border-left: 2px dotted rgba(255, 60, 0, 0.8);
+}
+.w-100 {
+	width: 100%;
+}
+#hero {
+	margin-bottom: 50px;
+}
+article {
+	.el-header {
+		padding: 0;
+	}
+	.el-container {
+		width: 1170px;
+		margin: 0 auto;
+		.el-main {
+			padding: 0;
+			h1:first-of-type {
+				margin: 0;
+			}
+			p {
+				font-size: 16px;
+				line-height: 28px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.el-button {
+		&.el-button--medium {
+			font-family: $header-font;
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+}
